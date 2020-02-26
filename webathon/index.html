@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Find Courses</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-logo"> Find Courses </div>
+     <div class="header-list">
+       <ul>
+         <li>About</li>
+         <li>Courses</li>
+         <li>Contact us</li>
+       </ul>
+     </div>
+ </div>
+
+    <div class="title"  style=" text-align: center;">
+     <font color="black" >   <h1> Find the best Courses. </h1>
+           </font>
+
+    </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="python.html">
+      <img class="collapsible" src="python.jpeg" alt="Python" width="600" height="400">
+    </a>
+    <p>Python</p>
+   
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="#">
+      <img class="collapsible" src="html.png" alt="HTML" width="600" height="400">
+    </a>
+    <p>HTML 5</p>
+   
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="#">
+      <img class="collapsible" src="css3.png" alt="css3" width="600" height="400">
+    </a>
+    <p>CSS 3</p>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="#">
+      <img class="collapsible" src="c.jpeg" alt="C-programming" width="600" height="400">
+    </a>
+    <p>C Language</p>
+  </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img class="collapsible" src="c++.jpeg" alt="C++" width="600" height="400">
+      </a>
+      <p>C++</p>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img class="collapsible" src="javascript.jpeg" alt="javascript" width="600" height="400">
+      </a>
+      <p>javaScript</p>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img class="collapsible" src="java.jpeg" alt="Mountains" width="600" height="400">
+      </a>
+      <p>Java</p>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img class="collapsible" src="mysql.jpeg" alt="Mountains" width="600" height="400">
+      </a>
+      <p>MySql</p>
+    </div>
+  </div>
+
+<div class="clearfix"></div>
+
+<div class="footer">
+    <div class="footer-logo"> Let's find Courses </div>
+    <div class="footer-list">
+      <ul>
+        <li>About</li>
+        <li>Jobs</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+</body>
+</html>
